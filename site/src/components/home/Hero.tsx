@@ -3,7 +3,17 @@ import { siteConfig } from "@/content/site";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-24 px-6">
+    <section
+      className="pt-32 pb-24 px-6 relative overflow-hidden"
+      style={{
+        backgroundImage: [
+          "radial-gradient(ellipse 65% 90% at 85% 50%, rgba(255,153,0,0.08) 0%, transparent 70%)",
+          "linear-gradient(rgba(255,153,0,0.025) 1px, transparent 1px)",
+          "linear-gradient(90deg, rgba(255,153,0,0.025) 1px, transparent 1px)",
+        ].join(", "),
+        backgroundSize: "auto, 72px 72px, 72px 72px",
+      }}
+    >
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* Left: headline block */}
         <div>
@@ -60,8 +70,8 @@ export default function Hero() {
               want real growth — not just engagement metrics.
             </p>
             <p>
-              10 years. Deep Klaviyo expertise. 50+ brands across every major
-              platform.
+              12 years. Deep Klaviyo expertise. Social, email, and e-commerce
+              across every major platform.
             </p>
             <p className="text-foreground/40 italic text-xs">
               P.S. — I don&apos;t just manage accounts. I build the strategy

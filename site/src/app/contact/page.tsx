@@ -18,39 +18,25 @@ export default function ContactPage() {
             opportunities. If you&apos;re working on something interesting,
             I want to hear about it.
           </p>
-          <div className="space-y-6">
+          {siteConfig.social.linkedin && (
             <div>
               <p className="text-xs text-muted uppercase tracking-widest mb-1">
-                Email
+                LinkedIn
               </p>
               <a
-                href={`mailto:${siteConfig.email}`}
+                href={siteConfig.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-accent hover:opacity-80 transition-opacity"
               >
-                {siteConfig.email}
+                View Profile →
               </a>
             </div>
-            {siteConfig.social.linkedin && (
-              <div>
-                <p className="text-xs text-muted uppercase tracking-widest mb-1">
-                  LinkedIn
-                </p>
-                <a
-                  href={siteConfig.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:opacity-80 transition-opacity"
-                >
-                  View Profile →
-                </a>
-              </div>
-            )}
-          </div>
+          )}
         </div>
 
         {/* Right: Contact form */}
-        {/* Note: This form needs an action handler for real submissions.
-            Recommended: connect to Formspree (formspree.io) or similar.
+        {/* Note: connect to Formspree (formspree.io) for real email delivery.
             Replace action="" below with your Formspree endpoint. */}
         <div className="border border-border bg-surface p-8">
           <form action="" method="POST" className="space-y-6">
@@ -97,12 +83,6 @@ export default function ContactPage() {
               Send Message
             </button>
           </form>
-          <p className="text-muted text-xs mt-4 text-center">
-            Or email directly at{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-accent">
-              {siteConfig.email}
-            </a>
-          </p>
         </div>
       </div>
     </div>

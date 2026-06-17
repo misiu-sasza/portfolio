@@ -30,14 +30,13 @@ export default function AboutPage() {
         <div className="max-w-3xl mb-20">
           <SectionLabel>About</SectionLabel>
           <h1 className="text-5xl md:text-7xl font-bold mt-4 mb-6 leading-[0.92]">
-            10 years in.
+            12 years in.
             <br />
             Still building.
           </h1>
           <p className="text-muted text-xl leading-relaxed">
-            I&apos;m a social media and digital marketer with a decade of
-            experience helping brands grow online — from content strategy to
-            email flows to full channel management.
+            Social media, email, and e-commerce marketing for brands that
+            couldn&apos;t afford to get it wrong.
           </p>
         </div>
 
@@ -53,21 +52,32 @@ export default function AboutPage() {
         {/* Bio + Values */}
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
           <div className="space-y-6 text-muted text-lg leading-relaxed">
-            {/* Replace the placeholder paragraphs below with your actual bio */}
             <p>
-              [Write your personal story here — how you got into digital
-              marketing, what draws you to this work, and what you&apos;ve built
-              along the way.]
+              Most of my career has been in lean setups — small teams, no agency
+              safety net, and a mandate to figure it out. At Bikebac, a
+              two-person bike security startup, I was the only marketer. I built
+              their Klaviyo system from scratch, migrated them off Shopify to
+              WooCommerce in 7 business days, and wrote every email, ad, and
+              social post. Email signup rates went from ~3% to 10.96%. The
+              welcome flow I rebuilt drove 213% more revenue year-over-year.
+              With zero paid budget, I generated 2.65M organic views on Meta and
+              turned that into $30K in direct sales.
             </p>
             <p>
-              Deep Klaviyo expertise. Fluent in how email and social work
-              together to build brands that retain customers, not just acquire
-              them.
+              Before that, two and a half years at Traeger Pellet Grills. I
+              launched their TikTok from scratch — zero to 210K followers in 24
+              months. One campaign alone pulled a 223% engagement lift.
             </p>
             <p>
-              [Add specific achievements, brands you&apos;ve worked with, or a
-              turning point in your career that shaped how you think about
-              growth.]
+              Before Traeger, seven years at Newschoolers — an action sports
+              media brand with a tight, loyal community. I started as Community
+              Manager and left as Digital Marketing Specialist. During that time
+              we grew the social audience by 410K, drove 16M new site visitors,
+              and generated 36K app downloads. None of it paid.
+            </p>
+            <p>
+              I work best when the job description doesn&apos;t quite cover what
+              the job actually is.
             </p>
           </div>
 
